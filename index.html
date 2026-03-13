@@ -68,7 +68,19 @@
         .btn-outline { border: 1px solid var(--border); color: var(--accent); background: transparent; }
         .btn-outline:hover { background: rgba(0,255,136,0.05); transform: translateY(-2px); }
         .hero-visual { position: relative; display: flex; flex-direction: column; align-items: center; }
-        .img-frame { width: 400; height: 400; border-radius: 20px; border: 2px solid var(--accent); overflow: hidden; box-shadow: var(--glow), 0 0 80px rgba(0,200,255,0.1); position: relative; background: var(--bg3); display: flex; align-items: center; justify-content: center; }
+       .img-frame {
+    width: 280px;   /* كانت 400 من غير px */
+    height: 280px;  /* كانت 400 من غير px */
+    border-radius: 20px;
+    border: 2px solid var(--accent);
+    overflow: hidden;
+    box-shadow: var(--glow), 0 0 80px rgba(0,200,255,0.1);
+    position: relative;
+    background: var(--bg3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
         .img-placeholder { font-size: 80px; color: rgba(0,255,136,0.15); }
         .img-frame img { width: 100%; height: 100%; object-fit: cover; }
         .img-frame::before { content: ''; position: absolute; top: -1px; right: -1px; width: 20px; height: 20px; border-top: 2px solid var(--accent2); border-right: 2px solid var(--accent2); border-radius: 0 4px 0 0; }
@@ -297,7 +309,12 @@
             <div class="hero-socials">
                 <a href="https://github.com/NadiaElfoly" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://eg.linkedin.com/in/nadia-elfoly" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:nadiaelfoly9@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+               <a href="https://mail.google.com/mail/?view=cm&to=nadiaelfoly9@gmail.com" 
+   class="social-btn" 
+   title="Email"
+   target="_blank">
+    <i class="fas fa-envelope"></i>
+</a>
                 <a href="https://wa.me/201203877377" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
             <div class="hero-stats">
@@ -404,7 +421,7 @@
                 <div class="tl-body">
                     <span class="tl-date">Jul 2024 — PRESENT</span>
                     <h3 class="tl-title">Data Analyst Trainee</h3>
-                    <h4 class="tl-sub">Rowad Data Analysis</h4>
+                    <h4 class="tl-sub">DEPI Data Analysis Track</h4>
                     <p class="tl-desc">Hands-on training in data analysis, data visualization, and deriving actionable insights from real-world datasets.</p>
                 </div>
             </div>
@@ -467,7 +484,65 @@
         </div>
     </div>
 </section>
-
+    <section id="projects" class="projects">
+    <div class="container">
+        <div class="sec-header">
+            <span class="sec-sub">MY WORK</span>
+            <h2 class="sec-title">Featured Projects</h2>
+            <p class="sec-desc">A collection of my work in Cyber Security, Data Analysis & Software Development</p>
+        </div>
+        <div class="filter-row">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="data">Data Analysis</button>
+            <button class="filter-btn" data-filter="ai">AI & Algorithms</button>
+            <button class="filter-btn" data-filter="db">Database</button>
+        </div>
+        <div class="projects-grid">
+            <div class="proj-card" data-category="db">
+                <div class="proj-img">
+                    <i class="fas fa-database proj-img-icon"></i>
+                    <div class="proj-overlay">
+                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">MySQL</span><span class="proj-tag">GUI</span><span class="proj-tag">Database</span></div>
+                    <h3 class="proj-title">Library Management System</h3>
+                    <p class="proj-desc">A full-featured library management system with a graphical user interface. Handles book inventory, member registration, borrowing & returns, and automated fine calculation — backed by a relational database.</p>
+                    <a href="Project.java" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+            <div class="proj-card" data-category="ai">
+                <div class="proj-img">
+                    <i class="fas fa-robot proj-img-icon"></i>
+                    <div class="proj-overlay">
+                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">AI</span><span class="proj-tag">Minimax</span><span class="proj-tag">Game Dev</span></div>
+                    <h3 class="proj-title">Connect Four — AI Game</h3>
+                    <p class="proj-desc">A classic Connect Four game powered by an AI opponent using the Minimax algorithm with Alpha-Beta pruning. The AI evaluates the board strategically and plays optimally — challenging even experienced players.</p>
+                    <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+            <div class="proj-card" data-category="data">
+                <div class="proj-img">
+                    <i class="fas fa-chart-bar proj-img-icon"></i>
+                    <div class="proj-overlay">
+                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">BeautifulSoup</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span></div>
+                    <h3 class="proj-title">Jumia Product Analysis</h3>
+                    <p class="proj-desc">End-to-end data project: scraped 1000+ products from Jumia Egypt, performed thorough data cleaning and preprocessing, then extracted actionable insights through exploratory data analysis and visualizations.</p>
+                    <a href="Notbook_jumia.ipynb" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- ACHIEVEMENTS SECTION -->
 <section id="achievements" class="experience">
     <div class="container">
@@ -554,66 +629,6 @@
         </div>
     </div>
 </section>
-    <section id="projects" class="projects">
-    <div class="container">
-        <div class="sec-header">
-            <span class="sec-sub">MY WORK</span>
-            <h2 class="sec-title">Featured Projects</h2>
-            <p class="sec-desc">A collection of my work in Cyber Security, Data Analysis & Software Development</p>
-        </div>
-        <div class="filter-row">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="data">Data Analysis</button>
-            <button class="filter-btn" data-filter="ai">AI & Algorithms</button>
-            <button class="filter-btn" data-filter="db">Database</button>
-        </div>
-        <div class="projects-grid">
-            <div class="proj-card" data-category="db">
-                <div class="proj-img">
-                    <i class="fas fa-database proj-img-icon"></i>
-                    <div class="proj-overlay">
-                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">MySQL</span><span class="proj-tag">GUI</span><span class="proj-tag">Database</span></div>
-                    <h3 class="proj-title">Library Management System</h3>
-                    <p class="proj-desc">A full-featured library management system with a graphical user interface. Handles book inventory, member registration, borrowing & returns, and automated fine calculation — backed by a relational database.</p>
-                    <a href="Project.java" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
-                </div>
-            </div>
-            <div class="proj-card" data-category="ai">
-                <div class="proj-img">
-                    <i class="fas fa-robot proj-img-icon"></i>
-                    <div class="proj-overlay">
-                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">AI</span><span class="proj-tag">Minimax</span><span class="proj-tag">Game Dev</span></div>
-                    <h3 class="proj-title">Connect Four — AI Game</h3>
-                    <p class="proj-desc">A classic Connect Four game powered by an AI opponent using the Minimax algorithm with Alpha-Beta pruning. The AI evaluates the board strategically and plays optimally — challenging even experienced players.</p>
-                    <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
-                </div>
-            </div>
-            <div class="proj-card" data-category="data">
-                <div class="proj-img">
-                    <i class="fas fa-chart-bar proj-img-icon"></i>
-                    <div class="proj-overlay">
-                        <a href="https://github.com/NadiaElfoly" target="_blank" class="proj-github"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="proj-body">
-                    <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">BeautifulSoup</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span></div>
-                    <h3 class="proj-title">Jumia Product Analysis</h3>
-                    <p class="proj-desc">End-to-end data project: scraped 1000+ products from Jumia Egypt, performed thorough data cleaning and preprocessing, then extracted actionable insights through exploratory data analysis and visualizations.</p>
-                    <a href="Notbook_jumia.ipynb" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="contact" class="contact">
     <div class="container">
         <div class="sec-header">
